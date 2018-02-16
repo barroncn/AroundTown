@@ -1,10 +1,19 @@
 {
   "name": "around-town",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.11.2"
+  },
   "description": "See what's going on in your town.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "node server.js",
+    "client": "cd client && npm run start",
+    "start": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
   },
   "repository": {
     "type": "git",
@@ -12,6 +21,24 @@
   },
   "author": "Caitin Barron",
   "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "express-print-routes": "^1.0.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "jsonwebtoken": "^8.1.1",
+    "mongoose": ">=4.1.11",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "reactstrap": "^5.0.0-beta"
+  },
   "bugs": {
     "url": "https://github.com/barroncn/AroundTown/issues"
   },

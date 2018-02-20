@@ -1,4 +1,11 @@
 body {
-    background-image: url("./cityBackground.jpg");
-    text-align: center;
+    background-image: url("./cityBackground3.jpg");
+    /*-webkit-background-size: cover;
+    */
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    background-size: cover;
+    /*text-align: center;*/
+    /*width: 100% !important;*/
+    /*overflow: hidden;*/
 }

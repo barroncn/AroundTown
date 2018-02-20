@@ -1,11 +1,22 @@
-.nav-link {
-    color: white;
-}
+/*.navbar {
+    */
 
-.nav {
-    background-color: black;
-}
+/*    color: white;*/
 
-.justify-content-end {
-    text-align: right;
+/*}*/
+
+/*.nav {*/
+
+/*    background-color: black;*/
+
+/*}*/
+
+/*.justify-content-end {*/
+
+/*    text-align: right;*/
+
+/*}*/
+
+.navbar-brand {
+    margin-left: 20px;
 }

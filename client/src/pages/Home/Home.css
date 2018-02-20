@@ -2,3 +2,7 @@ body {
     background-image: url("./BGcity.jpg");
     background-size: cover;
 }
+
+.searchbar {
+    max-width: 60vw;
+}

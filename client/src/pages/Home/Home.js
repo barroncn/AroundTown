@@ -7,14 +7,12 @@ class Home extends Component {
         return (
             <div>
                 <Nav />
-                <br />
-                <br />
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
                         </div>
                         <div className="col-md-6">
-                            <div className="input-group d-inline-flex p-3">
+                            <div className="input-group d-inline-flex p-3 searchbar">
                                   <input type="text" className="form-control" placeholder="Enter a city..." />
                                   <span className="input-group-btn">
                                     <button className="btn btn-secondary" type="button">Go!</button>

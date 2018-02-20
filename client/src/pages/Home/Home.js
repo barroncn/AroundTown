@@ -15,7 +15,7 @@ class Home extends Component {
                         </div>
                         <div className="col-md-6">
                             <div className="input-group d-inline-flex p-3">
-                                  <input type="text" className="form-control" placeholder="Enter a city to find events and activities nearby..." />
+                                  <input type="text" className="form-control" placeholder="Enter a city..." />
                                   <span className="input-group-btn">
                                     <button className="btn btn-secondary" type="button">Go!</button>
                                   </span>

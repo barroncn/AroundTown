@@ -1,8 +1,7 @@
 body {
     background-image: url("./BGcity.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-}
-
-.searchbar {
-    max-width: 60vw;
+    background-position: center top;
+    background-attachment: fixed;
 }
